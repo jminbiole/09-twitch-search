@@ -26,7 +26,7 @@
 // }
 
 export default function createGameItem(game) {
-  const title = document.createElement('object');
+  const title = document.createElement('div');
   title.classList.add('game-item');
 
   title.innerHTML = `
