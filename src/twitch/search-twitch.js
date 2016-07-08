@@ -9,15 +9,21 @@
 // parentElement with the games that it finds!
 
 import getTwitchData from './get-data';
+import addGamesToList from './add-games-to-list'
+import createGameItem from './create-game-element'
 
 export default function (parentElement, searchTerm, getData = getTwitchData) {
   // This function will run after `getData` has received data
   // Games will be a list of games from the twitch results
   const afterData = function (games) {
+    addGamesToList(parentElement, games);
+    var list = document.createElement('ul');
+    parentElement.appendChild(list);
+    list.classList.add('game-item');
 
   };
 
   // Need to return this for the tests to work...
   // More on that next week!
-  return getData().then(afterData);
+  return getData(searchTerm).then(afterData);
 }

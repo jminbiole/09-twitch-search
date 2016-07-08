@@ -1,10 +1,193 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>All Games - Twitch</title>
+  <link rel="stylesheet" href="/app.css">
+  <link rel='shortcut icon' href='favicon-twitch.ico' type='image/x-icon'/ >
+</head>
+<body>
+  <div class="tw-app">
+    <div class="tw-app__left">
+      <div class="side-bar__left">
+        <img class="logo" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_Logo_White.png" alt="">
+        <div class="InputAddOn">
+              <span class="InputAddOn-item"><i class="fa fa-search" aria-hidden="true"></i>
+      </span>
+              <input class="InputAddOn-field" placeholder="Search">
+            </div>
+        <ul class="nav-list">
+          <li class="nav-list__item"><i class="fa fa-plus" aria-hidden="true"></i> Games</li>
+          <li class="nav-list__item"><i class="fa fa-video-camera" aria-hidden="true"></i> Channels</li>
+          <li class="nav-list__item"><i class="fa fa-play" aria-hidden="true"></i> Videos</li>
+        </ul>
+        <div class="channels-list">
+          <p class="channels">Recommended Channels</p>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img src="http://www.placekitten.com/40/40" alt="">
+            </figure>
+            <div class="text-wrap">
+              <span class="list__item-title">Golden Split</span>
+              <span class="item-title__desc">playing Sonic the Hedgehog</span>
+            </div>
+          </div>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img src="http://www.placekitten.com/40/40" alt="">
+            </figure>
+            <div class="text-wrap">
+              <span class="list__item-title">lolstarladder</span>
+              <span class="item-title__desc">playing League of Legends</span>
+            </div>
+          </div>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img src="http://www.placekitten.com/40/40" alt="">
+            </figure>
+            <div class="text-wrap">
+              <span class="list__item-title">igromania</span>
+              <span class="item-title__desc">playing Dishonored Definitive</span>
+            </div>
+          </div>
+        </div>
+        <div class="other-list__container">
+          <p class="channels">More at Twitch</p>
+          <div class="other-list">
+            <ul class="more-twitch__one">
+              <li class="more-twitch__item">About</li>
+              <li class="more-twitch__item">Blog</li>
+              <li class="more-twitch__item">Cookie Policy</li>
+              <li class="more-twitch__item">Help</li>
+              <li class="more-twitch__item">Language</li>
+              <li class="more-twitch__item">Partners</li>
+              <li class="more-twitch__item">Store</li>
+            </ul>
+            <ul class="more-twitch__two">
+              <li class="more-twitch__item">Advertisers</li>
+              <li class="more-twitch__item">Creative</li>
+              <li class="more-twitch__item">Developers</li>
+              <li class="more-twitch__item">Jobs</li>
+              <li class="more-twitch__item">Music</li>
+              <li class="more-twitch__item">Press</li>
+              <li class="more-twitch__item">Terms</li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="nav-btn" >Log In</button>
+          <button class="nav-btn" >Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="tw-app__center">
+      <div class="heading">
+        <h1 class="all-games">All Games</h1>
+        <input class="input" type="search" placeholder="Search for a game">
+      </div>
+      <div class="games-list">
+        <!-- <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-item__container">
+              <div class="pic-container">
+                <img class="pic" src="http://placekitten.com/200/300" alt="">
+              </div>
+              <div class="item-text">
+                <h3 class="game-item__name">Name</h3>
+                <h5 class="game-item__popularity">Popularity</h5>
+              </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="tw-app__right">
+      <div class="tw-app__right-container">
+        <p class="alert">You're not logged in!</p>
+        <p class="alert-sub">If you don't have an account, go ahead and sign up. It takes like two seconds and it's totally worth it.</p>
+        <ul class="right-list">
+          <li class="right-list__item">Follow channels you enjoy watching.</li>
+          <li class="right-list__item">Get notifications when they go live.</li>
+          <li class="right-list__item">Chat with your fellow viewers.</li>
+          <li class="right-list__item">Send and receive direct messages.</li>
+          <li class="right-list__item">Start your own broadcast.</li>
+        </ul>
+        <div class="btn-container__right">
+          <button class="login-right">Log In</button>
+          <button class="signup-right">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  <script src="/vendor.js" charset="utf-8"></script>
+  <script src="/app.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    const twitch = require('twitch/index');
+    const gamesList = document.querySelector('.games-list');
+    twitch(gamesList, 'star');
+  </script>
+</body>
 </html>

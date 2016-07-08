@@ -7,11 +7,14 @@
 // Then add elements to the parent for each item in the data array
 //
 // You already have a function that creates these game item elements
-import createGameItem from 'create-game-element';
+import createGameItem from 'twitch/create-game-element';
+
 export default function (parent, data) {
-  const showAllResults = document.createElement('div');
+  console.log(data);
+  parent.innerHTML = "";
+  for (var i = 0; i < data.length; i++) {
+    var result = data[i];
+    parent.appendChild(createGameItem(result));
+  }
 
-
-
-  return showAllResults;
 }
