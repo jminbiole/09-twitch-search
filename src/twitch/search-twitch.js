@@ -9,6 +9,7 @@
 // parentElement with the games that it finds!
 
 import getTwitchData from './get-data';
+
 import addGamesToList from './add-games-to-list'
 import createGameItem from './create-game-element'
 
@@ -20,7 +21,6 @@ export default function (parentElement, searchTerm, getData = getTwitchData) {
     var list = document.createElement('ul');
     parentElement.appendChild(list);
     list.classList.add('game-item');
-
   };
 
   // Need to return this for the tests to work...
