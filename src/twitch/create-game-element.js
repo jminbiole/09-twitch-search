@@ -25,6 +25,17 @@
 //   _links: {},
 // }
 
-export default function (game) {
+export default function createGameItem(game) {
+  const title = document.createElement('object');
+  title.classList.add('game-item');
 
+  title.innerHTML = `
+    <h3 class="game-item__name">${game.name}</h3>
+    <h4 class="game-item__popularity">${game.popularity}</h4>
+    <img src="${game.box.large}" alt="${game.name}" class="game-item__pic" />
+  `;
+
+
+  console.log(title);
+  return title;
 }

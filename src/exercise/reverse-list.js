@@ -12,13 +12,12 @@
 //
 // You will have to change the usual starting and test conditions in your for loop
 
-export default function reverseList(existingList, destination) {
-  const p = existingList.querySelectorAll('li');
-  for (var i = p.length - 1; i >= 0; i--) {
-    var copy = p[i].cloneNode(true);
 
-      destination.appendChild(copy);
-      console.log(p);
-      console.log(copy);
+export default function reverseList(existingList, destination) {
+  const li = existingList.querySelectorAll('li')
+  for (var i = li.length - 1; i >= 0; i--) {
+    var clone = li[i].cloneNode(true);
+
+    destination.appendChild(clone);
   }
 }
