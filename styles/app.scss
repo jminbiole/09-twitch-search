@@ -6,3 +6,61 @@
 @import 'box-sizing';
 @import 'reset';
 @import 'twitch';
+
+.logo {
+  width: 1rem;
+}
+
+.tw-app__center {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 2rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  margin: 7rem .5rem 1.5rem;
+}
+
+.all-games {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+.input {
+  width: 12rem;
+}
+
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 25%;
+}
+.game-item__name {
+  width: 75%;
+  margin: 0 .5rem;
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+.game-item__popularity {
+  width: 75%;
+  margin: 0 .5rem;
+  font-family: Helvetica;
+}
+
+.game-item__pic {
+  height: 12rem;
+  margin: .5rem;
+}

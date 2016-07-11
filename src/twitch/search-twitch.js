@@ -18,9 +18,6 @@ export default function (parentElement, searchTerm, getData = getTwitchData) {
   // Games will be a list of games from the twitch results
   const afterData = function (games) {
     addGamesToList(parentElement, games);
-    var list = document.createElement('ul');
-    parentElement.appendChild(list);
-    list.classList.add('game-item');
   };
 
   // Need to return this for the tests to work...

@@ -31,9 +31,9 @@ export default function createGameItem(game) {
   title.classList.add('game-item');
 
   title.innerHTML = `
+    <img src="${game.box.large}" alt="${game.name}" class="game-item__pic" />
     <h3 class="game-item__name">${game.name}</h3>
     <h4 class="game-item__popularity">${game.popularity}</h4>
-    <img src="${game.box.large}" alt="${game.name}" class="game-item__pic" />
   `;
 
 
