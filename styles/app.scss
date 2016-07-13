@@ -7,6 +7,8 @@
 @import 'reset';
 @import 'twitch';
 
+$gutter: 1rem;
+
 .tw-app__left {
   background: #17141f;
   color: #fff;
@@ -153,15 +155,12 @@ p {
 }
 
 .game-item {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  width: 25%;
+  width: calc(100% / 4  - #{$gutter} - #{$gutter});
+  margin: $gutter;
 }
 
 .game-item__name {
   width: 75%;
-  margin: 0 0.5rem;
   font-size: 0.8rem;
   font-family: Helvetica;
 }
@@ -169,14 +168,13 @@ p {
 .game-item__popularity {
   width: 75%;
   font-size: 0.8rem;
-  margin: 0 0.5rem;
   font-family: Helvetica;
 }
 
 .game-item__pic {
-  height: 15rem;
-  margin: 0.5rem;
+  max-width: 100%;
 }
+
 
 .tw-app__right {
   background: #efeef1;
