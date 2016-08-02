@@ -129,11 +129,15 @@ p {
   margin: 2rem;
 }
 
+.container-center {
+  max-width: 40rem;
+}
+
 .heading {
   display: flex;
   justify-content: space-between;
-  height: 8rem;
-  margin: 2rem 0.5rem 0;
+  width: 100%;
+  margin: $gutter;
 }
 
 .all-games {
@@ -152,10 +156,12 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+  margin-top: 1rem;
+
 }
 
 .game-item {
-  width: calc(100% / 4  - #{$gutter} - #{$gutter});
+  width: calc(100% / 4  - 2rem);
   margin: $gutter;
 }
 
@@ -215,4 +221,26 @@ p {
   height: 2.2rem;
   color: #fff;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  // .tw-app__left {
+  //   display: none;
+  // }
+  .tw-app__right {
+    display: none;
+  }
+  .games-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .game-item {
+    width: calc(100% / 3  - #{$gutter} - #{$gutter});
+    margin: $gutter;
+  }
+
 }
