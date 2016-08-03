@@ -9,6 +9,10 @@
 
 $gutter: 1rem;
 
+html{
+  height: 100vh;
+}
+
 .tw-app__left {
   background: #17141f;
   color: #fff;
@@ -22,12 +26,19 @@ $gutter: 1rem;
   padding: 1rem;
   width: 100%;
   position: relative;
-  min-width: 15rem;
+  min-width: 14rem;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo {
   width: 7rem;
-  transform: translate(50%);
+  height: 2rem;
+  // transform: translate(50%);
 }
 
 .inputAddOn {
@@ -124,20 +135,23 @@ p {
 .tw-app__center {
   display: flex;
   flex-direction: column;
-  min-width: 25rem;
-  width: 85%;
+  flex-grow: 1;
+  min-width: 30rem;
+  width: 100%;
   margin: 2rem;
 }
 
 .container-center {
-  max-width: 40rem;
+  max-width: 60rem;
+  overflow: scroll;
 }
 
 .heading {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: $gutter;
+  margin: $gutter 1rem 0 1rem;
+  background: #fff;
+  height: 15rem;
 }
 
 .all-games {
@@ -151,13 +165,13 @@ p {
   border: #efeef1 solid 1px;
 }
 
+
 .games-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
   margin-top: 1rem;
-
 }
 
 .game-item {
@@ -203,12 +217,18 @@ p {
   margin-top: .5rem;
   padding: .5rem;
   font-size: .9rem;
+  min-width: 15rem;
+}
+
+.btn-container__right {
+  min-width: 15rem;
 }
 
 .login-right {
   background: #6441a4;
   border: 2px solid #501bb3;
   width: 30%;
+  min-width: 5rem;
   height: 2.2rem;
   color: #fff;
   font-size: 1rem;
@@ -218,12 +238,13 @@ p {
   background: #6441a4;
   border: 2px solid #501bb3;
   width: 30%;
+  min-width: 5rem;
   height: 2.2rem;
   color: #fff;
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   // .tw-app__left {
   //   display: none;
   // }
@@ -243,4 +264,10 @@ p {
     margin: $gutter;
   }
 
+}
+
+@media only screen and (max-width: 800px) {
+  .tw-app__left {
+    display: none;
+  }
 }
