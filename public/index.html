@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>All Games - Twitch</title>
+  <link rel="stylesheet" href="/app.css">
+  <link rel='shortcut icon' href='favicon-twitch.ico' type='image/x-icon' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+</head>
+
+<body>
+  <div class="tw-app">
+    <div class="tw-app__left">
+      <div class="side-bar__left">
+        <div class="logo-box">
+          <img class="logo" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_Logo_White.png" alt="">
+        </div>
+        <div class="inputAddOn">
+
+          <input class="inputAddOn-field" placeholder="&#128269    Search">
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list__item"><i class="fa fa-plus"  aria-hidden="true"></i>Games</li>
+          <li class="nav-list__item"><i class="fa fa-video-camera" aria-hidden="true"></i>Channels</li>
+          <li class="nav-list__item"><i class="fa fa-youtube-play" aria-hidden="true"></i>Videos</li>
+        </ul>
+        <div class="channels-list">
+          <p class="channels">RECOMMENDED CHANNELS</p>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img class="gamerpic" src="http://payload226.cargocollective.com/1/0/399/6826828/XBOX_gp_skull.png" alt="">
+            </figure>
+            <div class="text-wrap">
+              <p><span class ="gamertag">Egofat</span></br>playing Magic The Gathering</p>
+            </div>
+          </div>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img class="gamerpic" src="http://christopherlmartin.com/wp-content/uploads/2014/10/bigBeast_ChristopherMartin-626x626.png" alt="">
+            </figure>
+            <div class="text-wrap">
+              <p><span class ="gamertag">seanthelawnman</span></br>playing Gears of War 2</p>
+            </div>
+          </div>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img class="gamerpic" src="http://image.xboxlive.com/global/t.545407d8/tile/0/28012" alt="">
+            </figure>
+            <div class="text-wrap">
+              <p><span class ="gamertag">Jeff1726</span></br>playing Far Cry 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="other-list__container">
+          <p class="channels">MORE AT TWITCH</p>
+          <div class="other-list">
+            <ul class="more-twitch__one">
+              <li class="more-twitch__item">About</li>
+              <li class="more-twitch__item">Blog</li>
+              <li class="more-twitch__item">Cookie Policy</li>
+              <li class="more-twitch__item">Help</li>
+              <li class="more-twitch__item">Language</li>
+              <li class="more-twitch__item">Partners</li>
+              <li class="more-twitch__item">Store</li>
+            </ul>
+            <ul class="more-twitch__two">
+              <li class="more-twitch__item">Advertisers</li>
+              <li class="more-twitch__item">Creative</li>
+              <li class="more-twitch__item">Developers</li>
+              <li class="more-twitch__item">Jobs</li>
+              <li class="more-twitch__item">Music</li>
+              <li class="more-twitch__item">Press</li>
+              <li class="more-twitch__item">Terms</li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="nav-btn login">Log In</button>
+          <button class="nav-btn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="tw-app__center">
+      <div class="heading">
+        <h1 class="all-games">All Games</h1>
+        <input class="input" type="search" placeholder="Search for a game">
+      </div>
+      <div class="container-center">
+      <div class="games-list">
+      </div>
+    </div>
+  </div>
+    <div class="tw-app__right">
+      <div class="tw-app__right-container">
+        <p class="alert">You're not logged in!</p>
+        <p class="alert-sub">If you don't have an account, go ahead and sign up. It takes like two seconds and it's totally worth it.</p>
+        <ul class="right-list">
+          <li class="right-list__item">Follow channels you enjoy watching</li>
+          <li class="right-list__item">Get notifications when they go live</li>
+          <li class="right-list__item">Chat with your fellow viewers</li>
+          <li class="right-list__item">Send and receive direct messages</li>
+          <li class="right-list__item">Start your own broadcast</li>
+        </ul>
+        <div class="btn-container__right">
+          <button class="login-right">Log In</button>
+          <button class="signup-right">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="/vendor.js" charset="utf-8"></script>
+    <script src="/app.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      const twitch = require('twitch/index');
+
+      const gamesList = document.querySelector('.games-list');
+      twitch(gamesList, 'star');
+    </script>
+</body>
+
+</html>
